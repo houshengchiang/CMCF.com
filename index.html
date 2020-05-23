@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>欣恩影視 | Cmcf-production | 台北市 </title>
+
+
+	<link rel="shortcut icon" type="image/png" href="./assets/favicon.jpg"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<style>
+	html{
+		scroll-behavior: smooth;
+	}
+	@media screen and (min-width: 960px){
+		#aboutUs{
+		position: absolute;
+		background-color: red;
+		top: 0px;
+		bottom: 0px;
+		}
+	}
+	body{
+		font-family: "courier new"
+	}
+	video{
+		filter: opacity(55%);
+	}
+	#introVideo{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		top: 0px;
+		object-fit: cover;
+		z-index: -1;
+	}
+
+	#compLogo{
+		background-color: black;
+	}
+	#btnEnterSite{
+		padding: 5px 17px;
+		background-color: grey;
+		color: white;
+	}
+	#btnEnterSite:hover{
+		background-color: lightgrey;
+		color: white;
+		text-decoration: none;
+	}
+	.navbar-custom{
+		background-color: black;
+		color: white;
+		align-items: flex-end;
+	}
+	#aboutUs{
+		background-color: white;
+		padding: auto auto;
+	}
+	.sectionTitle{
+		background-color: #fc8a2f;
+	}
+	#contentOverVideo{
+		position: relative;
+		display: flex;
+		height: 90vh;
+		top: 56px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.container.p-4{
+		background-color: white;
+		margin-bottom: 27px;
+		min-height: 77vh;
+	}
+	.vertical-center{
+  		//min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
+  		//min-height: 50vh; /* These two lines are counted as one :-)       */
+
+  		display: flex;
+  		align-items: center;
+	}
+	footer{
+		background-color: black;
+		color: #fc8a2f;
+		padding: 20px;
+	}
+</style>
+
+</head>
+<body onload="fnOnLoad()">
+
+<div class="navbar fixed-top navbar-expand-lg navbar-custom navbar-dark" >
+
+	<a class="navbar-brand" href="#">
+		<img src="./assets/images/cmcfLogo.jpg" alt="欣恩影視事業股份有限公司" style="height: 80px">
+		
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" data-control="#navbarContent" aria-expanded="false" aria-label="Toggle Navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarContent" >
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" onclick="scrTo('hrAboutUs')">ABOUT CMCF / 關於CMCF</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" onclick="scrTo('hrShowreel')">SHOWREEL / 作品集</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" onclick="scrTo('hrContactUs')">CONTACT US / 聯絡我們</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+ 
+<div class="container-fluid p-0 videoIntro">
+	<video autoplay muted id="introVideo">
+		<source src="./assets/videos/welcome_to_CMCF.mp4" type="video/mp4">
+	</video>
+</div>
+
+<hr>
+<div class="container-fluid p-0" id="contentOverVideo">
+	<div class="container text-center" style="color: white;">
+		<h1 style=" font-weight: 1000; font-family: '微軟正黑體'; background-color: grey;">欣恩影視事業股份有限公司</h1>
+		<hr>
+		<button class="btn btn-info" onclick="scrTo('hrContactUs')">聯繫我們</button>
+	</div>
+</div>
+
+<hr id="hrAboutUs">
+<div class="container p-4">
+	<div class="row">
+		<div class="col-lg-4">
+			<section id="aboutUs" class="pt-auto pb-auto">
+				<h1 class="sectionTitle">ABOUT US</h1>
+				<article class="secitonContent">
+					欣恩影視於1990年成立，擁有二十餘年豐富的影片製作經驗，本著：『要求細節、養成專業、追求完美』的精神，執著於影、音創作。<br>
+					主要以廣告影片業務為主，擴展至企業形象、商品行銷、網絡行銷、電視節目、 電影…等專業的企劃及執行製作。<br>
+					針對客戶需求、產品屬性 及市場考量，結合美學與專業的經驗，精準的達成客戶需求。
+				</article>
+			</section>
+		</div>
+		<div class="col-lg-8">
+			<div class="embed-responsive embed-responsive-4by3">
+				<iframe class="embed-responsive" src="https://www.youtube.com/embed/4CcTNcQTq6g" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr id="hrShowreel">
+<div class="container p-4 text-center">
+	<h1>作品集</h1>
+	<div class="row vertical-center">
+		<div class="col-lg-3">
+			<div class="embed-responsive embed-responsive-4by3">
+				<iframe class="embed-responsive" src="https://www.youtube.com/embed/tkum_NlE4NQ" allowfullscreen></iframe>
+			</div>
+			國民健康署 榕樹下戒菸篇 30s
+		</div>
+		<div class="col-lg-3">
+			<div class="embed-responsive embed-responsive-4by3">
+				<iframe class="embed-responsive" src="https://www.youtube.com/embed/qim_iw1ckR0" allowfullscreen></iframe>
+				
+			</div>
+			Jolin「我拒菸我驕傲」 董氏基金會30秒公益廣告
+		</div>
+		<div class="col-lg-3">
+			<div class="embed-responsive embed-responsive-4by3">
+				<iframe class="embed-responsive" src="https://www.youtube.com/embed/6Zwpdz7d_ew" allowfullscreen></iframe>
+			</div>
+			2019菊島澎湖跨海馬拉松 破風篇 60s
+		</div>
+		<div class="col-lg-3 text-center">
+			See More +
+		</div>
+	</div>
+</div>
+<hr id="hrContactUs">
+<div class="container p-4">
+	<div class="row">
+		<div class="col-lg-4">
+			<section id="contactUs" class="pt-auto pb-auto">
+				<h1 class="sectionTitle">CONTACT US</h1>
+				<article class="secitonContent">
+					<p>
+						地址 / Add: <br>
+						10544<br>
+						台北市松山區敦化北路238巷10號一樓1F., No.10, Ln. 238, Dunhua N. Rd.<br>
+						Songshan Dist., Taipei City 10544<br>
+						Taiwan (R.O.C.)
+					</p>
+					<p>
+						電話 / Tel:<br>
+						+886-2-8770-4099
+					</p>
+					<p>
+						傳真 / Fax:<br>
+						+886-2-8770-4098
+					</p>
+					<p>
+						郵件 / E-mail:<br>
+						cmcf@ms17.hinet.net
+					</p>
+					<p>
+						業務接洽 /<br>
+						總監 / 賴銀山 先生<br>
+						監製 / 王銘勇（永哥）<br>
+						監製 / 賴宜汎（汎汎）
+					</p>
+				</article>
+			</section>
+		</div>
+		<div class="col-lg-8">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.231522805355!2d121.54645421450921!3d25.060140843398077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abef8912ee81%3A0x6b9c0c68f01df74f!2z5qyj5oGp5b2x6KaW5LqL5qWt6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1590244865313!5m2!1szh-TW!2stw" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="text-center">
+	<div class="container">
+		© 2020 by CM GALLERY PRODUCTION.
+	</div>
+	<span id="lastUpdateTime"></span>
+</footer>
+
+<script>
+	function fnOnLoad(){
+		scrollAdust();
+
+		loadTime = document.lastModified;
+		lmYear = new Date(loadTime).getFullYear();
+		lmMonth = new Date(loadTime).getMonth()+1;
+		lmDate = new Date(loadTime).getDate();
+
+		document.getElementById("lastUpdateTime").innerHTML = "Last Update: " + lmYear + "年" + lmMonth + "月" + lmDate + "日";
+	}
+
+	function scrTo(target){
+		targetOffset = document.getElementById(target).offsetTop;
+		navbarHeight = document.getElementsByClassName ("navbar")[0].offsetHeight
+		console.log(targetOffset, navbarHeight);
+		window.scrollTo(0,targetOffset - navbarHeight)
+	}
+
+	function scrollAdust(){
+		console.log(document.getElementsByClassName("navbar-collapse")[0])
+	}
+</script>
+
+<!--bootstrap reqired js-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
